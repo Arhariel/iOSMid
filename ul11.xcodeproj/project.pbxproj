@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E24E8CC72D7F069400A844C6 /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CBD2D7F065B00A844C6 /* FBLPromises.xcframework */; };
+		E24E8CC82D7F069400A844C6 /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CBE2D7F065B00A844C6 /* FirebaseAnalytics.xcframework */; };
+		E24E8CC92D7F069400A844C6 /* FirebaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CBF2D7F065B00A844C6 /* FirebaseCore.xcframework */; };
+		E24E8CCA2D7F069400A844C6 /* FirebaseCoreInternal.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC02D7F065B00A844C6 /* FirebaseCoreInternal.xcframework */; };
+		E24E8CCB2D7F069400A844C6 /* FirebaseInstallations.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC12D7F065B00A844C6 /* FirebaseInstallations.xcframework */; };
+		E24E8CCC2D7F069400A844C6 /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC22D7F065B00A844C6 /* GoogleAppMeasurement.xcframework */; };
+		E24E8CCD2D7F069400A844C6 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC32D7F065B00A844C6 /* GoogleAppMeasurementIdentitySupport.xcframework */; };
+		E24E8CCE2D7F069400A844C6 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC42D7F065B00A844C6 /* GoogleUtilities.xcframework */; };
+		E24E8CCF2D7F069400A844C6 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC52D7F065B00A844C6 /* nanopb.xcframework */; };
+		E24E8CD22D7F069C00A844C6 /* FirebaseAuthInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C792D7F047400A844C6 /* FirebaseAuthInterop.xcframework */; };
+		E24E8CD52D7F069C00A844C6 /* RecaptchaInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C7C2D7F047400A844C6 /* RecaptchaInterop.xcframework */; };
+		E24E8CD62D7F06B400A844C6 /* FirebaseAppCheckInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8E02D7EFF2500417C9F /* FirebaseAppCheckInterop.xcframework */; };
+		E24E8CD72D7F06B400A844C6 /* FirebaseDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8E22D7EFF2500417C9F /* FirebaseDatabase.xcframework */; };
+		E24E8CD82D7F06B400A844C6 /* FirebaseSharedSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8E12D7EFF2500417C9F /* FirebaseSharedSwift.xcframework */; };
+		E24E8CDA2D7F075800A844C6 /* absl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8EF2D7EFF3100417C9F /* absl.xcframework */; };
+		E24E8CDC2D7F075800A844C6 /* FirebaseCoreExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8F42D7EFF3100417C9F /* FirebaseCoreExtension.xcframework */; };
+		E24E8CDD2D7F075800A844C6 /* FirebaseFirestore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8F02D7EFF3100417C9F /* FirebaseFirestore.xcframework */; };
+		E24E8CDE2D7F075800A844C6 /* FirebaseFirestoreInternal.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8F22D7EFF3100417C9F /* FirebaseFirestoreInternal.xcframework */; };
+		E24E8CE02D7F075800A844C6 /* grpc.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8F12D7EFF3100417C9F /* grpc.xcframework */; };
+		E24E8CE12D7F075800A844C6 /* grpcpp.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8EB2D7EFF3100417C9F /* grpcpp.xcframework */; };
+		E24E8CE22D7F075800A844C6 /* leveldb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8EC2D7EFF3100417C9F /* leveldb.xcframework */; };
+		E24E8CE32D7F075800A844C6 /* openssl_grpc.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8ED2D7EFF3100417C9F /* openssl_grpc.xcframework */; };
+		E24E8CE42D7F08A200A844C6 /* FirebaseStorage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B90D2D7EFF4100417C9F /* FirebaseStorage.xcframework */; };
+		E24E8CE52D7F08A200A844C6 /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B90B2D7EFF4100417C9F /* GTMSessionFetcher.xcframework */; };
+		E24E8CE62D7F08BB00A844C6 /* FirebaseMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C9D2D7F05C400A844C6 /* FirebaseMessaging.xcframework */; };
+		E24E8CE72D7F08BB00A844C6 /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C9C2D7F05C400A844C6 /* GoogleDataTransport.xcframework */; };
+		E24E8D062D806A6A00A844C6 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C782D7F047400A844C6 /* FirebaseAuth.xcframework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2D5C43C2D7ED40C00C363E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D5C4212D7ED40B00C363E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2D5C4282D7ED40B00C363E1;
+			remoteInfo = ul11;
+		};
+		E2D5C4462D7ED40C00C363E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D5C4212D7ED40B00C363E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2D5C4282D7ED40B00C363E1;
+			remoteInfo = ul11;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E203B8B12D7EFE3400417C9F /* FirebaseInstallations.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseInstallations.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseAnalytics/FirebaseInstallations.xcframework; sourceTree = "<group>"; };
+		E203B8B22D7EFE3400417C9F /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = GoogleUtilities.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseAnalytics/GoogleUtilities.xcframework; sourceTree = "<group>"; };
+		E203B8B32D7EFE3400417C9F /* FirebaseCore.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseCore.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseAnalytics/FirebaseCore.xcframework; sourceTree = "<group>"; };
+		E203B8B42D7EFE3400417C9F /* GoogleAppMeasurementIdentitySupport.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurementIdentitySupport.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseAnalytics/GoogleAppMeasurementIdentitySupport.xcframework; sourceTree = "<group>"; };
+		E203B8B52D7EFE3400417C9F /* FirebaseAnalytics.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseAnalytics.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseAnalytics/FirebaseAnalytics.xcframework; sourceTree = "<group>"; };
+		E203B8B62D7EFE3400417C9F /* FirebaseCoreInternal.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseCoreInternal.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseAnalytics/FirebaseCoreInternal.xcframework; sourceTree = "<group>"; };
+		E203B8B72D7EFE3400417C9F /* nanopb.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = nanopb.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseAnalytics/nanopb.xcframework; sourceTree = "<group>"; };
+		E203B8B82D7EFE3400417C9F /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurement.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseAnalytics/GoogleAppMeasurement.xcframework; sourceTree = "<group>"; };
+		E203B8B92D7EFE3400417C9F /* FBLPromises.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FBLPromises.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseAnalytics/FBLPromises.xcframework; sourceTree = "<group>"; };
+		E203B8CD2D7EFE9A00417C9F /* FirebaseAuthInterop.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseAuthInterop.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseAuth/FirebaseAuthInterop.xcframework; sourceTree = "<group>"; };
+		E203B8CE2D7EFE9A00417C9F /* GTMSessionFetcher.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = GTMSessionFetcher.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseAuth/GTMSessionFetcher.xcframework; sourceTree = "<group>"; };
+		E203B8CF2D7EFE9A00417C9F /* FirebaseAuth.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseAuth.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseAuth/FirebaseAuth.xcframework; sourceTree = "<group>"; };
+		E203B8D02D7EFE9A00417C9F /* FirebaseCoreExtension.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseCoreExtension.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseAuth/FirebaseCoreExtension.xcframework; sourceTree = "<group>"; };
+		E203B8D12D7EFE9A00417C9F /* RecaptchaInterop.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = RecaptchaInterop.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseAuth/RecaptchaInterop.xcframework; sourceTree = "<group>"; };
+		E203B8D22D7EFE9A00417C9F /* FirebaseAppCheckInterop.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseAppCheckInterop.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseAuth/FirebaseAppCheckInterop.xcframework; sourceTree = "<group>"; };
+		E203B8DF2D7EFF2500417C9F /* leveldb.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = leveldb.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseDatabase/leveldb.xcframework; sourceTree = "<group>"; };
+		E203B8E02D7EFF2500417C9F /* FirebaseAppCheckInterop.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseAppCheckInterop.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseDatabase/FirebaseAppCheckInterop.xcframework; sourceTree = "<group>"; };
+		E203B8E12D7EFF2500417C9F /* FirebaseSharedSwift.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseSharedSwift.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseDatabase/FirebaseSharedSwift.xcframework; sourceTree = "<group>"; };
+		E203B8E22D7EFF2500417C9F /* FirebaseDatabase.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseDatabase.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseDatabase/FirebaseDatabase.xcframework; sourceTree = "<group>"; };
+		E203B8EB2D7EFF3100417C9F /* grpcpp.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = grpcpp.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseFirestore/grpcpp.xcframework; sourceTree = "<group>"; };
+		E203B8EC2D7EFF3100417C9F /* leveldb.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = leveldb.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseFirestore/leveldb.xcframework; sourceTree = "<group>"; };
+		E203B8ED2D7EFF3100417C9F /* openssl_grpc.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = openssl_grpc.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseFirestore/openssl_grpc.xcframework; sourceTree = "<group>"; };
+		E203B8EE2D7EFF3100417C9F /* FirebaseAppCheckInterop.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseAppCheckInterop.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseFirestore/FirebaseAppCheckInterop.xcframework; sourceTree = "<group>"; };
+		E203B8EF2D7EFF3100417C9F /* absl.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = absl.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseFirestore/absl.xcframework; sourceTree = "<group>"; };
+		E203B8F02D7EFF3100417C9F /* FirebaseFirestore.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseFirestore.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseFirestore/FirebaseFirestore.xcframework; sourceTree = "<group>"; };
+		E203B8F12D7EFF3100417C9F /* grpc.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = grpc.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseFirestore/grpc.xcframework; sourceTree = "<group>"; };
+		E203B8F22D7EFF3100417C9F /* FirebaseFirestoreInternal.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseFirestoreInternal.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseFirestore/FirebaseFirestoreInternal.xcframework; sourceTree = "<group>"; };
+		E203B8F32D7EFF3100417C9F /* FirebaseSharedSwift.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseSharedSwift.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseFirestore/FirebaseSharedSwift.xcframework; sourceTree = "<group>"; };
+		E203B8F42D7EFF3100417C9F /* FirebaseCoreExtension.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseCoreExtension.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseFirestore/FirebaseCoreExtension.xcframework; sourceTree = "<group>"; };
+		E203B9092D7EFF4100417C9F /* FirebaseCoreExtension.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseCoreExtension.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseStorage/FirebaseCoreExtension.xcframework; sourceTree = "<group>"; };
+		E203B90A2D7EFF4100417C9F /* FirebaseAppCheckInterop.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseAppCheckInterop.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseStorage/FirebaseAppCheckInterop.xcframework; sourceTree = "<group>"; };
+		E203B90B2D7EFF4100417C9F /* GTMSessionFetcher.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = GTMSessionFetcher.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseStorage/GTMSessionFetcher.xcframework; sourceTree = "<group>"; };
+		E203B90C2D7EFF4100417C9F /* FirebaseAuthInterop.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseAuthInterop.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseStorage/FirebaseAuthInterop.xcframework; sourceTree = "<group>"; };
+		E203B90D2D7EFF4100417C9F /* FirebaseStorage.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseStorage.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseStorage/FirebaseStorage.xcframework; sourceTree = "<group>"; };
+		E203B9182D7EFF6900417C9F /* GoogleDataTransport.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = GoogleDataTransport.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseCrashlytics/GoogleDataTransport.xcframework; sourceTree = "<group>"; };
+		E203B9192D7EFF6900417C9F /* FirebaseCoreExtension.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseCoreExtension.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseCrashlytics/FirebaseCoreExtension.xcframework; sourceTree = "<group>"; };
+		E203B91A2D7EFF6900417C9F /* FirebaseRemoteConfigInterop.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseRemoteConfigInterop.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseCrashlytics/FirebaseRemoteConfigInterop.xcframework; sourceTree = "<group>"; };
+		E203B91B2D7EFF6900417C9F /* Promises.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = Promises.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseCrashlytics/Promises.xcframework; sourceTree = "<group>"; };
+		E203B91C2D7EFF6900417C9F /* run */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = run; path = ../../../../../../../Downloads/Firebase/FirebaseCrashlytics/run; sourceTree = "<group>"; };
+		E203B91D2D7EFF6900417C9F /* FirebaseCrashlytics.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseCrashlytics.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseCrashlytics/FirebaseCrashlytics.xcframework; sourceTree = "<group>"; };
+		E203B91E2D7EFF6900417C9F /* FirebaseSessions.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseSessions.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseCrashlytics/FirebaseSessions.xcframework; sourceTree = "<group>"; };
+		E203B91F2D7EFF6900417C9F /* upload-symbols */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = "upload-symbols"; path = "../../../../../../../Downloads/Firebase/FirebaseCrashlytics/upload-symbols"; sourceTree = "<group>"; };
+		E203B92C2D7EFF9900417C9F /* FirebaseABTesting.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseABTesting.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseInAppMessaging/FirebaseABTesting.xcframework; sourceTree = "<group>"; };
+		E203B92D2D7EFF9900417C9F /* FirebaseInAppMessaging.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseInAppMessaging.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseInAppMessaging/FirebaseInAppMessaging.xcframework; sourceTree = "<group>"; };
+		E203B9322D7EFFC400417C9F /* FirebaseAnalyticsOnDeviceConversion.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseAnalyticsOnDeviceConversion.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseAnalyticsOnDeviceConversion/FirebaseAnalyticsOnDeviceConversion.xcframework; sourceTree = "<group>"; };
+		E203B9332D7EFFC400417C9F /* GoogleAppMeasurementOnDeviceConversion.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurementOnDeviceConversion.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseAnalyticsOnDeviceConversion/GoogleAppMeasurementOnDeviceConversion.xcframework; sourceTree = "<group>"; };
+		E203B9382D7EFFCF00417C9F /* AppAuth.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = AppAuth.xcframework; path = ../../../../../../../Downloads/Firebase/GoogleSignIn/AppAuth.xcframework; sourceTree = "<group>"; };
+		E203B9392D7EFFCF00417C9F /* AppCheckCore.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = AppCheckCore.xcframework; path = ../../../../../../../Downloads/Firebase/GoogleSignIn/AppCheckCore.xcframework; sourceTree = "<group>"; };
+		E203B93A2D7EFFCF00417C9F /* GoogleSignIn.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = GoogleSignIn.xcframework; path = ../../../../../../../Downloads/Firebase/GoogleSignIn/GoogleSignIn.xcframework; sourceTree = "<group>"; };
+		E203B93B2D7EFFCF00417C9F /* GTMAppAuth.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = GTMAppAuth.xcframework; path = ../../../../../../../Downloads/Firebase/GoogleSignIn/GTMAppAuth.xcframework; sourceTree = "<group>"; };
+		E203B93C2D7EFFD000417C9F /* GTMSessionFetcher.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = GTMSessionFetcher.xcframework; path = ../../../../../../../Downloads/Firebase/GoogleSignIn/GTMSessionFetcher.xcframework; sourceTree = "<group>"; };
+		E24E8C772D7F047400A844C6 /* FirebaseAppCheckInterop.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; path = FirebaseAppCheckInterop.xcframework; sourceTree = "<group>"; };
+		E24E8C782D7F047400A844C6 /* FirebaseAuth.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; path = FirebaseAuth.xcframework; sourceTree = "<group>"; };
+		E24E8C792D7F047400A844C6 /* FirebaseAuthInterop.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; path = FirebaseAuthInterop.xcframework; sourceTree = "<group>"; };
+		E24E8C7A2D7F047400A844C6 /* FirebaseCoreExtension.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; path = FirebaseCoreExtension.xcframework; sourceTree = "<group>"; };
+		E24E8C7B2D7F047400A844C6 /* GTMSessionFetcher.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; path = GTMSessionFetcher.xcframework; sourceTree = "<group>"; };
+		E24E8C7C2D7F047400A844C6 /* RecaptchaInterop.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; path = RecaptchaInterop.xcframework; sourceTree = "<group>"; };
+		E24E8C9C2D7F05C400A844C6 /* GoogleDataTransport.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = GoogleDataTransport.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseMessaging/GoogleDataTransport.xcframework; sourceTree = "<group>"; };
+		E24E8C9D2D7F05C400A844C6 /* FirebaseMessaging.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseMessaging.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseMessaging/FirebaseMessaging.xcframework; sourceTree = "<group>"; };
+		E24E8CBD2D7F065B00A844C6 /* FBLPromises.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; path = FBLPromises.xcframework; sourceTree = "<group>"; };
+		E24E8CBE2D7F065B00A844C6 /* FirebaseAnalytics.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; path = FirebaseAnalytics.xcframework; sourceTree = "<group>"; };
+		E24E8CBF2D7F065B00A844C6 /* FirebaseCore.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; path = FirebaseCore.xcframework; sourceTree = "<group>"; };
+		E24E8CC02D7F065B00A844C6 /* FirebaseCoreInternal.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; path = FirebaseCoreInternal.xcframework; sourceTree = "<group>"; };
+		E24E8CC12D7F065B00A844C6 /* FirebaseInstallations.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; path = FirebaseInstallations.xcframework; sourceTree = "<group>"; };
+		E24E8CC22D7F065B00A844C6 /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; path = GoogleAppMeasurement.xcframework; sourceTree = "<group>"; };
+		E24E8CC32D7F065B00A844C6 /* GoogleAppMeasurementIdentitySupport.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; path = GoogleAppMeasurementIdentitySupport.xcframework; sourceTree = "<group>"; };
+		E24E8CC42D7F065B00A844C6 /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; path = GoogleUtilities.xcframework; sourceTree = "<group>"; };
+		E24E8CC52D7F065B00A844C6 /* nanopb.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; path = nanopb.xcframework; sourceTree = "<group>"; };
+		E2D5C4292D7ED40B00C363E1 /* ul11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ul11.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D5C43B2D7ED40C00C363E1 /* ul11Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ul11Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D5C4452D7ED40C00C363E1 /* ul11UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ul11UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E2D5C42B2D7ED40B00C363E1 /* ul11 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ul11;
+			sourceTree = "<group>";
+		};
+		E2D5C43E2D7ED40C00C363E1 /* ul11Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ul11Tests;
+			sourceTree = "<group>";
+		};
+		E2D5C4482D7ED40C00C363E1 /* ul11UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ul11UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2D5C4262D7ED40B00C363E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E24E8CE62D7F08BB00A844C6 /* FirebaseMessaging.xcframework in Frameworks */,
+				E24E8CE72D7F08BB00A844C6 /* GoogleDataTransport.xcframework in Frameworks */,
+				E24E8CE42D7F08A200A844C6 /* FirebaseStorage.xcframework in Frameworks */,
+				E24E8CE52D7F08A200A844C6 /* GTMSessionFetcher.xcframework in Frameworks */,
+				E24E8CDA2D7F075800A844C6 /* absl.xcframework in Frameworks */,
+				E24E8CDC2D7F075800A844C6 /* FirebaseCoreExtension.xcframework in Frameworks */,
+				E24E8CDD2D7F075800A844C6 /* FirebaseFirestore.xcframework in Frameworks */,
+				E24E8CDE2D7F075800A844C6 /* FirebaseFirestoreInternal.xcframework in Frameworks */,
+				E24E8CE02D7F075800A844C6 /* grpc.xcframework in Frameworks */,
+				E24E8CE12D7F075800A844C6 /* grpcpp.xcframework in Frameworks */,
+				E24E8CE22D7F075800A844C6 /* leveldb.xcframework in Frameworks */,
+				E24E8CE32D7F075800A844C6 /* openssl_grpc.xcframework in Frameworks */,
+				E24E8CD62D7F06B400A844C6 /* FirebaseAppCheckInterop.xcframework in Frameworks */,
+				E24E8CD72D7F06B400A844C6 /* FirebaseDatabase.xcframework in Frameworks */,
+				E24E8CD82D7F06B400A844C6 /* FirebaseSharedSwift.xcframework in Frameworks */,
+				E24E8CD22D7F069C00A844C6 /* FirebaseAuthInterop.xcframework in Frameworks */,
+				E24E8CD52D7F069C00A844C6 /* RecaptchaInterop.xcframework in Frameworks */,
+				E24E8CC72D7F069400A844C6 /* FBLPromises.xcframework in Frameworks */,
+				E24E8CC82D7F069400A844C6 /* FirebaseAnalytics.xcframework in Frameworks */,
+				E24E8CC92D7F069400A844C6 /* FirebaseCore.xcframework in Frameworks */,
+				E24E8CCA2D7F069400A844C6 /* FirebaseCoreInternal.xcframework in Frameworks */,
+				E24E8CCB2D7F069400A844C6 /* FirebaseInstallations.xcframework in Frameworks */,
+				E24E8CCC2D7F069400A844C6 /* GoogleAppMeasurement.xcframework in Frameworks */,
+				E24E8CCD2D7F069400A844C6 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
+				E24E8CCE2D7F069400A844C6 /* GoogleUtilities.xcframework in Frameworks */,
+				E24E8D062D806A6A00A844C6 /* FirebaseAuth.xcframework in Frameworks */,
+				E24E8CCF2D7F069400A844C6 /* nanopb.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D5C4382D7ED40C00C363E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D5C4422D7ED40C00C363E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E203B8B02D7EFE3400417C9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E24E8CC62D7F065B00A844C6 /* FirebaseAnalytics */,
+				E24E8C9D2D7F05C400A844C6 /* FirebaseMessaging.xcframework */,
+				E24E8C9C2D7F05C400A844C6 /* GoogleDataTransport.xcframework */,
+				E24E8C7D2D7F047400A844C6 /* FirebaseAuth */,
+				E203B9382D7EFFCF00417C9F /* AppAuth.xcframework */,
+				E203B9392D7EFFCF00417C9F /* AppCheckCore.xcframework */,
+				E203B93A2D7EFFCF00417C9F /* GoogleSignIn.xcframework */,
+				E203B93B2D7EFFCF00417C9F /* GTMAppAuth.xcframework */,
+				E203B93C2D7EFFD000417C9F /* GTMSessionFetcher.xcframework */,
+				E203B9322D7EFFC400417C9F /* FirebaseAnalyticsOnDeviceConversion.xcframework */,
+				E203B9332D7EFFC400417C9F /* GoogleAppMeasurementOnDeviceConversion.xcframework */,
+				E203B92C2D7EFF9900417C9F /* FirebaseABTesting.xcframework */,
+				E203B92D2D7EFF9900417C9F /* FirebaseInAppMessaging.xcframework */,
+				E203B9192D7EFF6900417C9F /* FirebaseCoreExtension.xcframework */,
+				E203B91D2D7EFF6900417C9F /* FirebaseCrashlytics.xcframework */,
+				E203B91A2D7EFF6900417C9F /* FirebaseRemoteConfigInterop.xcframework */,
+				E203B91E2D7EFF6900417C9F /* FirebaseSessions.xcframework */,
+				E203B9182D7EFF6900417C9F /* GoogleDataTransport.xcframework */,
+				E203B91B2D7EFF6900417C9F /* Promises.xcframework */,
+				E203B91C2D7EFF6900417C9F /* run */,
+				E203B91F2D7EFF6900417C9F /* upload-symbols */,
+				E203B90A2D7EFF4100417C9F /* FirebaseAppCheckInterop.xcframework */,
+				E203B90C2D7EFF4100417C9F /* FirebaseAuthInterop.xcframework */,
+				E203B9092D7EFF4100417C9F /* FirebaseCoreExtension.xcframework */,
+				E203B90D2D7EFF4100417C9F /* FirebaseStorage.xcframework */,
+				E203B90B2D7EFF4100417C9F /* GTMSessionFetcher.xcframework */,
+				E203B8EF2D7EFF3100417C9F /* absl.xcframework */,
+				E203B8D22D7EFE9A00417C9F /* FirebaseAppCheckInterop.xcframework */,
+				E203B8E02D7EFF2500417C9F /* FirebaseAppCheckInterop.xcframework */,
+				E203B8EE2D7EFF3100417C9F /* FirebaseAppCheckInterop.xcframework */,
+				E203B8F42D7EFF3100417C9F /* FirebaseCoreExtension.xcframework */,
+				E203B8F02D7EFF3100417C9F /* FirebaseFirestore.xcframework */,
+				E203B8F22D7EFF3100417C9F /* FirebaseFirestoreInternal.xcframework */,
+				E203B8F32D7EFF3100417C9F /* FirebaseSharedSwift.xcframework */,
+				E203B8F12D7EFF3100417C9F /* grpc.xcframework */,
+				E203B8EB2D7EFF3100417C9F /* grpcpp.xcframework */,
+				E203B8EC2D7EFF3100417C9F /* leveldb.xcframework */,
+				E203B8ED2D7EFF3100417C9F /* openssl_grpc.xcframework */,
+				E203B8E22D7EFF2500417C9F /* FirebaseDatabase.xcframework */,
+				E203B8E12D7EFF2500417C9F /* FirebaseSharedSwift.xcframework */,
+				E203B8DF2D7EFF2500417C9F /* leveldb.xcframework */,
+				E203B8CF2D7EFE9A00417C9F /* FirebaseAuth.xcframework */,
+				E203B8CD2D7EFE9A00417C9F /* FirebaseAuthInterop.xcframework */,
+				E203B8D02D7EFE9A00417C9F /* FirebaseCoreExtension.xcframework */,
+				E203B8CE2D7EFE9A00417C9F /* GTMSessionFetcher.xcframework */,
+				E203B8D12D7EFE9A00417C9F /* RecaptchaInterop.xcframework */,
+				E203B8B92D7EFE3400417C9F /* FBLPromises.xcframework */,
+				E203B8B52D7EFE3400417C9F /* FirebaseAnalytics.xcframework */,
+				E203B8B32D7EFE3400417C9F /* FirebaseCore.xcframework */,
+				E203B8B62D7EFE3400417C9F /* FirebaseCoreInternal.xcframework */,
+				E203B8B12D7EFE3400417C9F /* FirebaseInstallations.xcframework */,
+				E203B8B82D7EFE3400417C9F /* GoogleAppMeasurement.xcframework */,
+				E203B8B42D7EFE3400417C9F /* GoogleAppMeasurementIdentitySupport.xcframework */,
+				E203B8B22D7EFE3400417C9F /* GoogleUtilities.xcframework */,
+				E203B8B72D7EFE3400417C9F /* nanopb.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E24E8C7D2D7F047400A844C6 /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				E24E8C772D7F047400A844C6 /* FirebaseAppCheckInterop.xcframework */,
+				E24E8C782D7F047400A844C6 /* FirebaseAuth.xcframework */,
+				E24E8C792D7F047400A844C6 /* FirebaseAuthInterop.xcframework */,
+				E24E8C7A2D7F047400A844C6 /* FirebaseCoreExtension.xcframework */,
+				E24E8C7B2D7F047400A844C6 /* GTMSessionFetcher.xcframework */,
+				E24E8C7C2D7F047400A844C6 /* RecaptchaInterop.xcframework */,
+			);
+			name = FirebaseAuth;
+			path = ../../../../../../../Downloads/Firebase/FirebaseAuth;
+			sourceTree = "<group>";
+		};
+		E24E8CC62D7F065B00A844C6 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				E24E8CBD2D7F065B00A844C6 /* FBLPromises.xcframework */,
+				E24E8CBE2D7F065B00A844C6 /* FirebaseAnalytics.xcframework */,
+				E24E8CBF2D7F065B00A844C6 /* FirebaseCore.xcframework */,
+				E24E8CC02D7F065B00A844C6 /* FirebaseCoreInternal.xcframework */,
+				E24E8CC12D7F065B00A844C6 /* FirebaseInstallations.xcframework */,
+				E24E8CC22D7F065B00A844C6 /* GoogleAppMeasurement.xcframework */,
+				E24E8CC32D7F065B00A844C6 /* GoogleAppMeasurementIdentitySupport.xcframework */,
+				E24E8CC42D7F065B00A844C6 /* GoogleUtilities.xcframework */,
+				E24E8CC52D7F065B00A844C6 /* nanopb.xcframework */,
+			);
+			name = FirebaseAnalytics;
+			path = ../../../../../../../Downloads/Firebase/FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		E2D5C4202D7ED40B00C363E1 = {
+			isa = PBXGroup;
+			children = (
+				E2D5C42B2D7ED40B00C363E1 /* ul11 */,
+				E2D5C43E2D7ED40C00C363E1 /* ul11Tests */,
+				E2D5C4482D7ED40C00C363E1 /* ul11UITests */,
+				E203B8B02D7EFE3400417C9F /* Frameworks */,
+				E2D5C42A2D7ED40B00C363E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2D5C42A2D7ED40B00C363E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2D5C4292D7ED40B00C363E1 /* ul11.app */,
+				E2D5C43B2D7ED40C00C363E1 /* ul11Tests.xctest */,
+				E2D5C4452D7ED40C00C363E1 /* ul11UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2D5C4282D7ED40B00C363E1 /* ul11 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2D5C44F2D7ED40C00C363E1 /* Build configuration list for PBXNativeTarget "ul11" */;
+			buildPhases = (
+				E2D5C4252D7ED40B00C363E1 /* Sources */,
+				E2D5C4262D7ED40B00C363E1 /* Frameworks */,
+				E2D5C4272D7ED40B00C363E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E2D5C42B2D7ED40B00C363E1 /* ul11 */,
+			);
+			name = ul11;
+			packageProductDependencies = (
+			);
+			productName = ul11;
+			productReference = E2D5C4292D7ED40B00C363E1 /* ul11.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2D5C43A2D7ED40C00C363E1 /* ul11Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2D5C4522D7ED40C00C363E1 /* Build configuration list for PBXNativeTarget "ul11Tests" */;
+			buildPhases = (
+				E2D5C4372D7ED40C00C363E1 /* Sources */,
+				E2D5C4382D7ED40C00C363E1 /* Frameworks */,
+				E2D5C4392D7ED40C00C363E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2D5C43D2D7ED40C00C363E1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E2D5C43E2D7ED40C00C363E1 /* ul11Tests */,
+			);
+			name = ul11Tests;
+			packageProductDependencies = (
+			);
+			productName = ul11Tests;
+			productReference = E2D5C43B2D7ED40C00C363E1 /* ul11Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2D5C4442D7ED40C00C363E1 /* ul11UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2D5C4552D7ED40C00C363E1 /* Build configuration list for PBXNativeTarget "ul11UITests" */;
+			buildPhases = (
+				E2D5C4412D7ED40C00C363E1 /* Sources */,
+				E2D5C4422D7ED40C00C363E1 /* Frameworks */,
+				E2D5C4432D7ED40C00C363E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2D5C4472D7ED40C00C363E1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E2D5C4482D7ED40C00C363E1 /* ul11UITests */,
+			);
+			name = ul11UITests;
+			packageProductDependencies = (
+			);
+			productName = ul11UITests;
+			productReference = E2D5C4452D7ED40C00C363E1 /* ul11UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2D5C4212D7ED40B00C363E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					E2D5C4282D7ED40B00C363E1 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					E2D5C43A2D7ED40C00C363E1 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = E2D5C4282D7ED40B00C363E1;
+					};
+					E2D5C4442D7ED40C00C363E1 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = E2D5C4282D7ED40B00C363E1;
+					};
+				};
+			};
+			buildConfigurationList = E2D5C4242D7ED40B00C363E1 /* Build configuration list for PBXProject "ul11" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2D5C4202D7ED40B00C363E1;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E2D5C42A2D7ED40B00C363E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2D5C4282D7ED40B00C363E1 /* ul11 */,
+				E2D5C43A2D7ED40C00C363E1 /* ul11Tests */,
+				E2D5C4442D7ED40C00C363E1 /* ul11UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2D5C4272D7ED40B00C363E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D5C4392D7ED40C00C363E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D5C4432D7ED40C00C363E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2D5C4252D7ED40B00C363E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D5C4372D7ED40C00C363E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D5C4412D7ED40C00C363E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2D5C43D2D7ED40C00C363E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2D5C4282D7ED40B00C363E1 /* ul11 */;
+			targetProxy = E2D5C43C2D7ED40C00C363E1 /* PBXContainerItemProxy */;
+		};
+		E2D5C4472D7ED40C00C363E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2D5C4282D7ED40B00C363E1 /* ul11 */;
+			targetProxy = E2D5C4462D7ED40C00C363E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E2D5C44D2D7ED40C00C363E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2D5C44E2D7ED40C00C363E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2D5C4502D7ED40C00C363E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ul11/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "iOS-ul11.ul11";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2D5C4512D7ED40C00C363E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ul11/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "iOS-ul11.ul11";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E2D5C4532D7ED40C00C363E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "iOS-ul11.ul11Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ul11.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ul11";
+			};
+			name = Debug;
+		};
+		E2D5C4542D7ED40C00C363E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "iOS-ul11.ul11Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ul11.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ul11";
+			};
+			name = Release;
+		};
+		E2D5C4562D7ED40C00C363E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "iOS-ul11.ul11UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ul11;
+			};
+			name = Debug;
+		};
+		E2D5C4572D7ED40C00C363E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "iOS-ul11.ul11UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ul11;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2D5C4242D7ED40B00C363E1 /* Build configuration list for PBXProject "ul11" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2D5C44D2D7ED40C00C363E1 /* Debug */,
+				E2D5C44E2D7ED40C00C363E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2D5C44F2D7ED40C00C363E1 /* Build configuration list for PBXNativeTarget "ul11" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2D5C4502D7ED40C00C363E1 /* Debug */,
+				E2D5C4512D7ED40C00C363E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2D5C4522D7ED40C00C363E1 /* Build configuration list for PBXNativeTarget "ul11Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2D5C4532D7ED40C00C363E1 /* Debug */,
+				E2D5C4542D7ED40C00C363E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2D5C4552D7ED40C00C363E1 /* Build configuration list for PBXNativeTarget "ul11UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2D5C4562D7ED40C00C363E1 /* Debug */,
+				E2D5C4572D7ED40C00C363E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2D5C4212D7ED40B00C363E1 /* Project object */;
+}
