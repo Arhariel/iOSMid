@@ -1,101 +1,160 @@
 import XCTest
 import Combine
+import FirebaseCore
 @testable import ul11
 
-class MockFirestore: FirestoreProtocol {
-    var addedTasks: [Task] = []
-    var deletedTaskIDs: [String] = []
-    var updatedTasks: [String: [String: Any]] = [:]
+final class FirestoreViewModelIntegrationTests: XCTestCase {
     
-    func simulateFetchTasks(viewModel: FirestoreViewModel) {
-        let tasks = [
-            Task(id: "1", title: "Test Task 1", category: "Work", note: nil),
-            Task(id: "2", title: "Test Task 2", category: "Home", note: "Important")
-        ]
-        DispatchQueue.main.async {
-            viewModel.updateTasks(tasks)
-        }
-    }
-    
-    func addDocument(from task: Task) throws {
-        addedTasks.append(task)
-    }
-    
-    func document(_ id: String) -> DocumentReferenceProtocol {
-        return MockDocumentReference(id: id, mockFirestore: self)
-    }
-}
-
-class MockDocumentReference: DocumentReferenceProtocol {
-    let id: String
-    let mockFirestore: MockFirestore
-    
-    init(id: String, mockFirestore: MockFirestore) {
-        self.id = id
-        self.mockFirestore = mockFirestore
-    }
-    
-    func delete(completion: ((Error?) -> Void)?) {
-        mockFirestore.deletedTaskIDs.append(id)
-        completion?(nil)
-    }
-    
-    func updateData(_ data: [String : Any], completion: ((Error?) -> Void)?) {
-        mockFirestore.updatedTasks[id] = data
-        completion?(nil)
-    }
-}
-
-class FirestoreViewModelTests: XCTestCase {
     var viewModel: FirestoreViewModel!
-    var mockFirestore: MockFirestore!
     var cancellables: Set<AnyCancellable> = []
     
-    override func setUp() {
-        super.setUp()
-        mockFirestore = MockFirestore()
-        viewModel = FirestoreViewModel(db: mockFirestore)
+    override func setUpWithError() throws {
+        // Инициализируем Firebase один раз, если нужно
+        if FirebaseApp.app() == nil {
+            FirebaseApp.configure()
+        }
+        viewModel = FirestoreViewModel() // Ваш реальный init, который внутри использует Firestore.firestore()
     }
     
-    override func tearDown() {
+    override func tearDownWithError() throws {
         viewModel = nil
-        mockFirestore = nil
         cancellables.removeAll()
-        super.tearDown()
     }
+    
+    // MARK: - Тест fetchTasks
     
     func testFetchTasks() {
-        let expectation = XCTestExpectation(description: "Fetch tasks updates published list")
+        let expectation = XCTestExpectation(description: "Tasks are fetched from Firestore")
         
+        // Подпишемся на обновления массива tasks
+        viewModel.$tasks
+            .dropFirst() // игнорируем начальное пустое значение
+            .sink { tasks in
+                // Проверяем, что массив обновился
+                print("Fetched tasks: \(tasks)")
+                // Например, хотим убедиться, что массив не пуст
+                XCTAssertFalse(tasks.isEmpty, "Список задач не должен быть пустым (или проверьте логику).")
+                
+                expectation.fulfill()
+            }
+            .store(in: &self.cancellables)
+        
+        // Запускаем метод, который ходит в реальный Firestore
+        viewModel.fetchTasks()
+        
+        wait(for: [expectation], timeout: 10.0)
+    }
+    
+    // MARK: - Тест addTask
+    
+    func testAddTask() {
+        let expectation = XCTestExpectation(description: "Newly added task appears in tasks array via snapshotListener")
+        
+        // Сгенерируем уникальное название, чтобы отличать задачу
+        let randomTitle = "IntegrationTest-\(UUID().uuidString.prefix(5))"
+        
+        // Подпишемся на tasks и будем ждать, когда в массиве появится задача с нашим randomTitle
         viewModel.$tasks
             .dropFirst()
             .sink { tasks in
-                XCTAssertEqual(tasks.count, 2)
-                expectation.fulfill()
+                if tasks.contains(where: { $0.title == randomTitle }) {
+                    // Задача успешно добавлена и пришла в snapshotListener
+                    print("✅ Task with title \(randomTitle) was added and observed in tasks.")
+                    expectation.fulfill()
+                }
             }
-            .store(in: &cancellables)
+            .store(in: &self.cancellables)
         
-        mockFirestore.simulateFetchTasks(viewModel: viewModel)
+        // Добавляем задачу
+        viewModel.addTask(title: randomTitle, category: "TestCategory", note: "Some note")
         
-        wait(for: [expectation], timeout: 1.0)
+        wait(for: [expectation], timeout: 10.0)
     }
     
-    func testAddTask() {
-        viewModel.addTask(title: "New Task", category: "Work", note: "Some note")
-        XCTAssertEqual(mockFirestore.addedTasks.count, 1)
-        XCTAssertEqual(mockFirestore.addedTasks.first?.title, "New Task")
-    }
+    // MARK: - Тест deleteTask
     
     func testDeleteTask() {
-        let task = Task(id: "123", title: "Task to Delete", category: "Home", note: nil)
-        viewModel.deleteTask(task: task)
-        XCTAssertEqual(mockFirestore.deletedTaskIDs.first, "123")
+        let addExpectation = XCTestExpectation(description: "Task is added before we delete it")
+        let deleteExpectation = XCTestExpectation(description: "Task is deleted and removed from tasks array")
+        
+        let randomTitle = "DeleteTest-\(UUID().uuidString.prefix(5))"
+        
+        // Логика: сначала дождёмся, когда задача добавится, потом вызовем deleteTask и дождёмся, что задача исчезла.
+        
+        // 1) Подписываемся на обновления, чтобы отследить добавление, а потом удаление
+        viewModel.$tasks
+            .dropFirst() // игнорируем начальное состояние
+            .sink { [weak self] tasks in
+                guard let self = self else { return }
+                
+                // Если задача с randomTitle появилась — выполняем addExpectation
+                if tasks.contains(where: { $0.title == randomTitle }) && !addExpectation.isFulfilled {
+                    addExpectation.fulfill()
+                    
+                    // Как только задача появилась, найдём её, чтобы удалить
+                    if let taskToDelete = tasks.first(where: { $0.title == randomTitle }) {
+                        self.viewModel.deleteTask(task: taskToDelete)
+                    }
+                }
+                
+                // Если задача уже была добавлена и мы вызвали deleteTask,
+                // ждём, что она пропадёт из массива
+                if addExpectation.isFulfilled {
+                    if !tasks.contains(where: { $0.title == randomTitle }) {
+                        print("✅ Task with title \(randomTitle) was deleted.")
+                        deleteExpectation.fulfill()
+                    }
+                }
+            }
+            .store(in: &self.cancellables)
+        
+        // 2) Добавляем задачу
+        viewModel.addTask(title: randomTitle, category: "TestCategory", note: nil)
+        
+        // Ждём, пока задача добавится и удалится
+        wait(for: [addExpectation, deleteExpectation], timeout: 15.0)
     }
     
+    // MARK: - Тест updateTask
+    
     func testUpdateTask() {
-        let task = Task(id: "123", title: "Old Task", category: "Home", note: "Old Note")
-        viewModel.updateTask(task: task, newTitle: "Updated Task", newNote: "Updated Note")
-        XCTAssertEqual(mockFirestore.updatedTasks["123"]?["title"] as? String, "Updated Task")
-        XCTAssertEqual(mockFirestore.updatedTasks["123"]?["note"] as? String, "Updated Note")
+        let addExpectation = XCTestExpectation(description: "Task is added before update")
+        let updateExpectation = XCTestExpectation(description: "Task is updated and new title is reflected in tasks array")
+        
+        let randomTitle = "UpdateTest-\(UUID().uuidString.prefix(5))"
+        let updatedTitle = "UpdatedTitle-\(UUID().uuidString.prefix(5))"
+        
+        // Подпишемся на tasks, чтобы отследить и добавление, и обновление
+        viewModel.$tasks
+            .dropFirst()
+            .sink { [weak self] tasks in
+                guard let self = self else { return }
+                
+                // 1) Сначала ждём, когда задача появится
+                if tasks.contains(where: { $0.title == randomTitle }) && !addExpectation.isFulfilled {
+                    addExpectation.fulfill()
+                    
+                    // Берём задачу и обновляем
+                    if let taskToUpdate = tasks.first(where: { $0.title == randomTitle }) {
+                        self.viewModel.updateTask(task: taskToUpdate,
+                                                  newTitle: updatedTitle,
+                                                  newNote: "Updated note")
+                    }
+                }
+                
+                // 2) После вызова updateTask ждём, что title станет updatedTitle
+                if addExpectation.isFulfilled {
+                    if tasks.contains(where: { $0.title == updatedTitle }) {
+                        print("✅ Task title successfully updated to \(updatedTitle).")
+                        updateExpectation.fulfill()
+                    }
+                }
+            }
+            .store(in: &self.cancellables)
+        
+        // Добавляем задачу, чтобы потом обновить
+        viewModel.addTask(title: randomTitle, category: "TestCategory", note: nil)
+        
+        wait(for: [addExpectation, updateExpectation], timeout: 15.0)
     }
 }

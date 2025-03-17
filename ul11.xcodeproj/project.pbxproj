@@ -34,118 +34,29 @@
 		E24E8CE62D7F08BB00A844C6 /* FirebaseMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C9D2D7F05C400A844C6 /* FirebaseMessaging.xcframework */; };
 		E24E8CE72D7F08BB00A844C6 /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C9C2D7F05C400A844C6 /* GoogleDataTransport.xcframework */; };
 		E24E8D062D806A6A00A844C6 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C782D7F047400A844C6 /* FirebaseAuth.xcframework */; };
-		E2ACDABA2D8831FC0075172E /* absl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8EF2D7EFF3100417C9F /* absl.xcframework */; };
-		E2ACDABB2D8831FC0075172E /* absl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8EF2D7EFF3100417C9F /* absl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDABC2D8831FC0075172E /* AppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B9382D7EFFCF00417C9F /* AppAuth.xcframework */; };
-		E2ACDABD2D8831FC0075172E /* AppAuth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B9382D7EFFCF00417C9F /* AppAuth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDABE2D8831FC0075172E /* AppCheckCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B9392D7EFFCF00417C9F /* AppCheckCore.xcframework */; };
-		E2ACDABF2D8831FC0075172E /* AppCheckCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B9392D7EFFCF00417C9F /* AppCheckCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAC02D8831FC0075172E /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CBD2D7F065B00A844C6 /* FBLPromises.xcframework */; };
-		E2ACDAC12D8831FC0075172E /* FBLPromises.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CBD2D7F065B00A844C6 /* FBLPromises.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAC22D8831FC0075172E /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8B92D7EFE3400417C9F /* FBLPromises.xcframework */; };
-		E2ACDAC32D8831FC0075172E /* FirebaseABTesting.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B92C2D7EFF9900417C9F /* FirebaseABTesting.xcframework */; };
-		E2ACDAC42D8831FC0075172E /* FirebaseABTesting.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B92C2D7EFF9900417C9F /* FirebaseABTesting.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAC52D8831FC0075172E /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CBE2D7F065B00A844C6 /* FirebaseAnalytics.xcframework */; };
-		E2ACDAC62D8831FC0075172E /* FirebaseAnalytics.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CBE2D7F065B00A844C6 /* FirebaseAnalytics.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAC72D8831FC0075172E /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8B52D7EFE3400417C9F /* FirebaseAnalytics.xcframework */; };
-		E2ACDAC82D8831FC0075172E /* FirebaseAnalyticsOnDeviceConversion.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B9322D7EFFC400417C9F /* FirebaseAnalyticsOnDeviceConversion.xcframework */; };
-		E2ACDAC92D8831FC0075172E /* FirebaseAnalyticsOnDeviceConversion.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B9322D7EFFC400417C9F /* FirebaseAnalyticsOnDeviceConversion.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDACA2D8831FC0075172E /* FirebaseAppCheckInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C772D7F047400A844C6 /* FirebaseAppCheckInterop.xcframework */; };
-		E2ACDACB2D8831FC0075172E /* FirebaseAppCheckInterop.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C772D7F047400A844C6 /* FirebaseAppCheckInterop.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDACC2D8831FC0075172E /* FirebaseAppCheckInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B90A2D7EFF4100417C9F /* FirebaseAppCheckInterop.xcframework */; };
-		E2ACDACD2D8831FC0075172E /* FirebaseAppCheckInterop.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B90A2D7EFF4100417C9F /* FirebaseAppCheckInterop.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDACE2D8831FC0075172E /* FirebaseAppCheckInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8D22D7EFE9A00417C9F /* FirebaseAppCheckInterop.xcframework */; };
-		E2ACDACF2D8831FC0075172E /* FirebaseAppCheckInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8E02D7EFF2500417C9F /* FirebaseAppCheckInterop.xcframework */; };
-		E2ACDAD02D8831FC0075172E /* FirebaseAppCheckInterop.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8E02D7EFF2500417C9F /* FirebaseAppCheckInterop.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAD12D8831FC0075172E /* FirebaseAppCheckInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8EE2D7EFF3100417C9F /* FirebaseAppCheckInterop.xcframework */; };
-		E2ACDAD22D8831FC0075172E /* FirebaseAppCheckInterop.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8EE2D7EFF3100417C9F /* FirebaseAppCheckInterop.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAD32D8831FC0075172E /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C782D7F047400A844C6 /* FirebaseAuth.xcframework */; };
-		E2ACDAD42D8831FC0075172E /* FirebaseAuth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C782D7F047400A844C6 /* FirebaseAuth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAD52D8831FC0075172E /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8CF2D7EFE9A00417C9F /* FirebaseAuth.xcframework */; };
-		E2ACDAD62D8831FC0075172E /* FirebaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CBF2D7F065B00A844C6 /* FirebaseCore.xcframework */; };
-		E2ACDAD72D8831FC0075172E /* FirebaseCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CBF2D7F065B00A844C6 /* FirebaseCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAD82D8831FC0075172E /* FirebaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8B32D7EFE3400417C9F /* FirebaseCore.xcframework */; };
-		E2ACDAD92D8831FC0075172E /* FirebaseCoreExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C7A2D7F047400A844C6 /* FirebaseCoreExtension.xcframework */; };
-		E2ACDADA2D8831FC0075172E /* FirebaseCoreExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C7A2D7F047400A844C6 /* FirebaseCoreExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDADB2D8831FC0075172E /* FirebaseCoreExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B9192D7EFF6900417C9F /* FirebaseCoreExtension.xcframework */; };
-		E2ACDADC2D8831FC0075172E /* FirebaseCoreExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B9192D7EFF6900417C9F /* FirebaseCoreExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDADD2D8831FC0075172E /* FirebaseCoreExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B9092D7EFF4100417C9F /* FirebaseCoreExtension.xcframework */; };
-		E2ACDADE2D8831FC0075172E /* FirebaseCoreExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B9092D7EFF4100417C9F /* FirebaseCoreExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDADF2D8831FC0075172E /* FirebaseCoreExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8F42D7EFF3100417C9F /* FirebaseCoreExtension.xcframework */; };
-		E2ACDAE02D8831FC0075172E /* FirebaseCoreExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8F42D7EFF3100417C9F /* FirebaseCoreExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAE12D8831FC0075172E /* FirebaseCoreExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8D02D7EFE9A00417C9F /* FirebaseCoreExtension.xcframework */; };
-		E2ACDAE22D8831FC0075172E /* FirebaseCoreInternal.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC02D7F065B00A844C6 /* FirebaseCoreInternal.xcframework */; };
-		E2ACDAE32D8831FC0075172E /* FirebaseCoreInternal.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC02D7F065B00A844C6 /* FirebaseCoreInternal.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAE42D8831FC0075172E /* FirebaseCoreInternal.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8B62D7EFE3400417C9F /* FirebaseCoreInternal.xcframework */; };
-		E2ACDAE52D8831FC0075172E /* FirebaseCrashlytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B91D2D7EFF6900417C9F /* FirebaseCrashlytics.xcframework */; };
-		E2ACDAE62D8831FC0075172E /* FirebaseCrashlytics.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B91D2D7EFF6900417C9F /* FirebaseCrashlytics.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAE72D8831FC0075172E /* FirebaseDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8E22D7EFF2500417C9F /* FirebaseDatabase.xcframework */; };
-		E2ACDAE82D8831FC0075172E /* FirebaseDatabase.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8E22D7EFF2500417C9F /* FirebaseDatabase.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAE92D8831FC0075172E /* FirebaseFirestore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8F02D7EFF3100417C9F /* FirebaseFirestore.xcframework */; };
-		E2ACDAEA2D8831FC0075172E /* FirebaseFirestore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8F02D7EFF3100417C9F /* FirebaseFirestore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAEB2D8831FC0075172E /* FirebaseFirestoreInternal.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8F22D7EFF3100417C9F /* FirebaseFirestoreInternal.xcframework */; };
-		E2ACDAEC2D8831FC0075172E /* FirebaseFirestoreInternal.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8F22D7EFF3100417C9F /* FirebaseFirestoreInternal.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAED2D8831FC0075172E /* FirebaseInAppMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B92D2D7EFF9900417C9F /* FirebaseInAppMessaging.xcframework */; };
-		E2ACDAEE2D8831FC0075172E /* FirebaseInAppMessaging.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B92D2D7EFF9900417C9F /* FirebaseInAppMessaging.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAEF2D8831FC0075172E /* FirebaseInstallations.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC12D7F065B00A844C6 /* FirebaseInstallations.xcframework */; };
-		E2ACDAF02D8831FC0075172E /* FirebaseInstallations.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC12D7F065B00A844C6 /* FirebaseInstallations.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAF12D8831FC0075172E /* FirebaseInstallations.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8B12D7EFE3400417C9F /* FirebaseInstallations.xcframework */; };
-		E2ACDAF22D8831FC0075172E /* FirebaseMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C9D2D7F05C400A844C6 /* FirebaseMessaging.xcframework */; };
-		E2ACDAF32D8831FC0075172E /* FirebaseMessaging.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C9D2D7F05C400A844C6 /* FirebaseMessaging.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAF42D8831FC0075172E /* FirebaseRemoteConfigInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B91A2D7EFF6900417C9F /* FirebaseRemoteConfigInterop.xcframework */; };
-		E2ACDAF52D8831FC0075172E /* FirebaseRemoteConfigInterop.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B91A2D7EFF6900417C9F /* FirebaseRemoteConfigInterop.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAF62D8831FC0075172E /* FirebaseSessions.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B91E2D7EFF6900417C9F /* FirebaseSessions.xcframework */; };
-		E2ACDAF72D8831FC0075172E /* FirebaseSessions.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B91E2D7EFF6900417C9F /* FirebaseSessions.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAF82D8831FC0075172E /* FirebaseSharedSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8F32D7EFF3100417C9F /* FirebaseSharedSwift.xcframework */; };
-		E2ACDAF92D8831FC0075172E /* FirebaseSharedSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8F32D7EFF3100417C9F /* FirebaseSharedSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAFA2D8831FC0075172E /* FirebaseSharedSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8E12D7EFF2500417C9F /* FirebaseSharedSwift.xcframework */; };
-		E2ACDAFB2D8831FC0075172E /* FirebaseSharedSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8E12D7EFF2500417C9F /* FirebaseSharedSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAFC2D8831FC0075172E /* FirebaseStorage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B90D2D7EFF4100417C9F /* FirebaseStorage.xcframework */; };
-		E2ACDAFD2D8831FC0075172E /* FirebaseStorage.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B90D2D7EFF4100417C9F /* FirebaseStorage.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDAFE2D8831FC0075172E /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC22D7F065B00A844C6 /* GoogleAppMeasurement.xcframework */; };
-		E2ACDAFF2D8831FC0075172E /* GoogleAppMeasurement.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC22D7F065B00A844C6 /* GoogleAppMeasurement.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB002D8831FC0075172E /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8B82D7EFE3400417C9F /* GoogleAppMeasurement.xcframework */; };
-		E2ACDB012D8831FC0075172E /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC32D7F065B00A844C6 /* GoogleAppMeasurementIdentitySupport.xcframework */; };
-		E2ACDB022D8831FC0075172E /* GoogleAppMeasurementIdentitySupport.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC32D7F065B00A844C6 /* GoogleAppMeasurementIdentitySupport.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB032D8831FC0075172E /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8B42D7EFE3400417C9F /* GoogleAppMeasurementIdentitySupport.xcframework */; };
-		E2ACDB042D8831FC0075172E /* GoogleAppMeasurementOnDeviceConversion.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B9332D7EFFC400417C9F /* GoogleAppMeasurementOnDeviceConversion.xcframework */; };
-		E2ACDB052D8831FC0075172E /* GoogleAppMeasurementOnDeviceConversion.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B9332D7EFFC400417C9F /* GoogleAppMeasurementOnDeviceConversion.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB062D8831FC0075172E /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C9C2D7F05C400A844C6 /* GoogleDataTransport.xcframework */; };
-		E2ACDB072D8831FC0075172E /* GoogleDataTransport.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C9C2D7F05C400A844C6 /* GoogleDataTransport.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB082D8831FC0075172E /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B9182D7EFF6900417C9F /* GoogleDataTransport.xcframework */; };
-		E2ACDB092D8831FC0075172E /* GoogleDataTransport.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B9182D7EFF6900417C9F /* GoogleDataTransport.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB0A2D8831FC0075172E /* GoogleSignIn.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B93A2D7EFFCF00417C9F /* GoogleSignIn.xcframework */; };
-		E2ACDB0B2D8831FC0075172E /* GoogleSignIn.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B93A2D7EFFCF00417C9F /* GoogleSignIn.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB0C2D8831FC0075172E /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC42D7F065B00A844C6 /* GoogleUtilities.xcframework */; };
-		E2ACDB0D2D8831FC0075172E /* GoogleUtilities.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC42D7F065B00A844C6 /* GoogleUtilities.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB0E2D8831FC0075172E /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8B22D7EFE3400417C9F /* GoogleUtilities.xcframework */; };
-		E2ACDB0F2D8831FC0075172E /* grpc.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8F12D7EFF3100417C9F /* grpc.xcframework */; };
-		E2ACDB102D8831FC0075172E /* grpc.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8F12D7EFF3100417C9F /* grpc.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB112D8831FC0075172E /* grpcpp.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8EB2D7EFF3100417C9F /* grpcpp.xcframework */; };
-		E2ACDB122D8831FC0075172E /* grpcpp.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8EB2D7EFF3100417C9F /* grpcpp.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB132D8831FC0075172E /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B93B2D7EFFCF00417C9F /* GTMAppAuth.xcframework */; };
-		E2ACDB142D8831FC0075172E /* GTMAppAuth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B93B2D7EFFCF00417C9F /* GTMAppAuth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB152D8831FC0075172E /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C7B2D7F047400A844C6 /* GTMSessionFetcher.xcframework */; };
-		E2ACDB162D8831FC0075172E /* GTMSessionFetcher.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C7B2D7F047400A844C6 /* GTMSessionFetcher.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB172D8831FC0075172E /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B93C2D7EFFD000417C9F /* GTMSessionFetcher.xcframework */; };
-		E2ACDB182D8831FC0075172E /* GTMSessionFetcher.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B93C2D7EFFD000417C9F /* GTMSessionFetcher.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB192D8831FC0075172E /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B90B2D7EFF4100417C9F /* GTMSessionFetcher.xcframework */; };
-		E2ACDB1A2D8831FC0075172E /* GTMSessionFetcher.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B90B2D7EFF4100417C9F /* GTMSessionFetcher.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB1B2D8831FC0075172E /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8CE2D7EFE9A00417C9F /* GTMSessionFetcher.xcframework */; };
-		E2ACDB1C2D8831FC0075172E /* leveldb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8EC2D7EFF3100417C9F /* leveldb.xcframework */; };
-		E2ACDB1D2D8831FC0075172E /* leveldb.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8EC2D7EFF3100417C9F /* leveldb.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB1E2D8831FC0075172E /* leveldb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8DF2D7EFF2500417C9F /* leveldb.xcframework */; };
-		E2ACDB1F2D8831FC0075172E /* leveldb.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8DF2D7EFF2500417C9F /* leveldb.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB202D8831FC0075172E /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC52D7F065B00A844C6 /* nanopb.xcframework */; };
-		E2ACDB212D8831FC0075172E /* nanopb.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC52D7F065B00A844C6 /* nanopb.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB222D8831FC0075172E /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8B72D7EFE3400417C9F /* nanopb.xcframework */; };
-		E2ACDB232D8831FC0075172E /* openssl_grpc.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8ED2D7EFF3100417C9F /* openssl_grpc.xcframework */; };
-		E2ACDB242D8831FC0075172E /* openssl_grpc.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8ED2D7EFF3100417C9F /* openssl_grpc.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB252D8831FC0075172E /* Promises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B91B2D7EFF6900417C9F /* Promises.xcframework */; };
-		E2ACDB262D8831FC0075172E /* Promises.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E203B91B2D7EFF6900417C9F /* Promises.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB272D8831FC0075172E /* RecaptchaInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C7C2D7F047400A844C6 /* RecaptchaInterop.xcframework */; };
-		E2ACDB282D8831FC0075172E /* RecaptchaInterop.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C7C2D7F047400A844C6 /* RecaptchaInterop.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2ACDB292D8831FC0075172E /* RecaptchaInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8D12D7EFE9A00417C9F /* RecaptchaInterop.xcframework */; };
+		E2ACDB2B2D883A630075172E /* FirebaseMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C9D2D7F05C400A844C6 /* FirebaseMessaging.xcframework */; };
+		E2ACDB2C2D883A6B0075172E /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C9C2D7F05C400A844C6 /* GoogleDataTransport.xcframework */; };
+		E2ACDB2D2D883A700075172E /* FirebaseStorage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B90D2D7EFF4100417C9F /* FirebaseStorage.xcframework */; };
+		E2ACDB2E2D883A770075172E /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C7B2D7F047400A844C6 /* GTMSessionFetcher.xcframework */; };
+		E2ACDB2F2D883A7D0075172E /* absl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8EF2D7EFF3100417C9F /* absl.xcframework */; };
+		E2ACDB302D883A830075172E /* FirebaseCoreExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C7A2D7F047400A844C6 /* FirebaseCoreExtension.xcframework */; };
+		E2ACDB312D883A890075172E /* FirebaseFirestore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8F02D7EFF3100417C9F /* FirebaseFirestore.xcframework */; };
+		E2ACDB322D883A8E0075172E /* FirebaseFirestoreInternal.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8F22D7EFF3100417C9F /* FirebaseFirestoreInternal.xcframework */; };
+		E2ACDB332D883A950075172E /* grpc.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8F12D7EFF3100417C9F /* grpc.xcframework */; };
+		E2ACDB342D883A9B0075172E /* grpcpp.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8EB2D7EFF3100417C9F /* grpcpp.xcframework */; };
+		E2ACDB352D883AA10075172E /* leveldb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8EC2D7EFF3100417C9F /* leveldb.xcframework */; };
+		E2ACDB362D883AA70075172E /* openssl_grpc.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8ED2D7EFF3100417C9F /* openssl_grpc.xcframework */; };
+		E2ACDB372D883AAF0075172E /* FirebaseAppCheckInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8C772D7F047400A844C6 /* FirebaseAppCheckInterop.xcframework */; };
+		E2ACDB382D883AB50075172E /* FirebaseDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8E22D7EFF2500417C9F /* FirebaseDatabase.xcframework */; };
+		E2ACDB392D883ABB0075172E /* FirebaseSharedSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8F32D7EFF3100417C9F /* FirebaseSharedSwift.xcframework */; };
+		E2ACDB3A2D883AC10075172E /* FirebaseAuthInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B90C2D7EFF4100417C9F /* FirebaseAuthInterop.xcframework */; };
+		E2ACDB3B2D883AD20075172E /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CBD2D7F065B00A844C6 /* FBLPromises.xcframework */; };
+		E2ACDB3C2D883AD70075172E /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CBE2D7F065B00A844C6 /* FirebaseAnalytics.xcframework */; };
+		E2ACDB3D2D883ADC0075172E /* FirebaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8B32D7EFE3400417C9F /* FirebaseCore.xcframework */; };
+		E2ACDB3E2D883B140075172E /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC22D7F065B00A844C6 /* GoogleAppMeasurement.xcframework */; };
+		E2ACDB3F2D883B1E0075172E /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E8CC42D7F065B00A844C6 /* GoogleUtilities.xcframework */; };
+		E2ACDB402D883B240075172E /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8CF2D7EFE9A00417C9F /* FirebaseAuth.xcframework */; };
+		E2ACDB412D883B290075172E /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E203B8B72D7EFE3400417C9F /* nanopb.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,68 +75,6 @@
 			remoteInfo = ul11;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		E2ACDB2A2D8831FC0075172E /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				E2ACDAC12D8831FC0075172E /* FBLPromises.xcframework in Embed Frameworks */,
-				E2ACDAEE2D8831FC0075172E /* FirebaseInAppMessaging.xcframework in Embed Frameworks */,
-				E2ACDB242D8831FC0075172E /* openssl_grpc.xcframework in Embed Frameworks */,
-				E2ACDB1F2D8831FC0075172E /* leveldb.xcframework in Embed Frameworks */,
-				E2ACDAF02D8831FC0075172E /* FirebaseInstallations.xcframework in Embed Frameworks */,
-				E2ACDB052D8831FC0075172E /* GoogleAppMeasurementOnDeviceConversion.xcframework in Embed Frameworks */,
-				E2ACDAE02D8831FC0075172E /* FirebaseCoreExtension.xcframework in Embed Frameworks */,
-				E2ACDB102D8831FC0075172E /* grpc.xcframework in Embed Frameworks */,
-				E2ACDAFD2D8831FC0075172E /* FirebaseStorage.xcframework in Embed Frameworks */,
-				E2ACDAD02D8831FC0075172E /* FirebaseAppCheckInterop.xcframework in Embed Frameworks */,
-				E2ACDABF2D8831FC0075172E /* AppCheckCore.xcframework in Embed Frameworks */,
-				E2ACDB0B2D8831FC0075172E /* GoogleSignIn.xcframework in Embed Frameworks */,
-				E2ACDAD72D8831FC0075172E /* FirebaseCore.xcframework in Embed Frameworks */,
-				E2ACDB182D8831FC0075172E /* GTMSessionFetcher.xcframework in Embed Frameworks */,
-				E2ACDABB2D8831FC0075172E /* absl.xcframework in Embed Frameworks */,
-				E2ACDAF72D8831FC0075172E /* FirebaseSessions.xcframework in Embed Frameworks */,
-				E2ACDADC2D8831FC0075172E /* FirebaseCoreExtension.xcframework in Embed Frameworks */,
-				E2ACDB1A2D8831FC0075172E /* GTMSessionFetcher.xcframework in Embed Frameworks */,
-				E2ACDB122D8831FC0075172E /* grpcpp.xcframework in Embed Frameworks */,
-				E2ACDAF32D8831FC0075172E /* FirebaseMessaging.xcframework in Embed Frameworks */,
-				E2ACDB142D8831FC0075172E /* GTMAppAuth.xcframework in Embed Frameworks */,
-				E2ACDADA2D8831FC0075172E /* FirebaseCoreExtension.xcframework in Embed Frameworks */,
-				E2ACDB212D8831FC0075172E /* nanopb.xcframework in Embed Frameworks */,
-				E2ACDB1D2D8831FC0075172E /* leveldb.xcframework in Embed Frameworks */,
-				E2ACDAEA2D8831FC0075172E /* FirebaseFirestore.xcframework in Embed Frameworks */,
-				E2ACDACB2D8831FC0075172E /* FirebaseAppCheckInterop.xcframework in Embed Frameworks */,
-				E2ACDAFF2D8831FC0075172E /* GoogleAppMeasurement.xcframework in Embed Frameworks */,
-				E2ACDB162D8831FC0075172E /* GTMSessionFetcher.xcframework in Embed Frameworks */,
-				E2ACDAE82D8831FC0075172E /* FirebaseDatabase.xcframework in Embed Frameworks */,
-				E2ACDB022D8831FC0075172E /* GoogleAppMeasurementIdentitySupport.xcframework in Embed Frameworks */,
-				E2ACDAF92D8831FC0075172E /* FirebaseSharedSwift.xcframework in Embed Frameworks */,
-				E2ACDAF52D8831FC0075172E /* FirebaseRemoteConfigInterop.xcframework in Embed Frameworks */,
-				E2ACDB0D2D8831FC0075172E /* GoogleUtilities.xcframework in Embed Frameworks */,
-				E2ACDAEC2D8831FC0075172E /* FirebaseFirestoreInternal.xcframework in Embed Frameworks */,
-				E2ACDB072D8831FC0075172E /* GoogleDataTransport.xcframework in Embed Frameworks */,
-				E2ACDAD22D8831FC0075172E /* FirebaseAppCheckInterop.xcframework in Embed Frameworks */,
-				E2ACDAE62D8831FC0075172E /* FirebaseCrashlytics.xcframework in Embed Frameworks */,
-				E2ACDB092D8831FC0075172E /* GoogleDataTransport.xcframework in Embed Frameworks */,
-				E2ACDB282D8831FC0075172E /* RecaptchaInterop.xcframework in Embed Frameworks */,
-				E2ACDAC42D8831FC0075172E /* FirebaseABTesting.xcframework in Embed Frameworks */,
-				E2ACDABD2D8831FC0075172E /* AppAuth.xcframework in Embed Frameworks */,
-				E2ACDAC92D8831FC0075172E /* FirebaseAnalyticsOnDeviceConversion.xcframework in Embed Frameworks */,
-				E2ACDAC62D8831FC0075172E /* FirebaseAnalytics.xcframework in Embed Frameworks */,
-				E2ACDAFB2D8831FC0075172E /* FirebaseSharedSwift.xcframework in Embed Frameworks */,
-				E2ACDAE32D8831FC0075172E /* FirebaseCoreInternal.xcframework in Embed Frameworks */,
-				E2ACDADE2D8831FC0075172E /* FirebaseCoreExtension.xcframework in Embed Frameworks */,
-				E2ACDB262D8831FC0075172E /* Promises.xcframework in Embed Frameworks */,
-				E2ACDAD42D8831FC0075172E /* FirebaseAuth.xcframework in Embed Frameworks */,
-				E2ACDACD2D8831FC0075172E /* FirebaseAppCheckInterop.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E203B8B12D7EFE3400417C9F /* FirebaseInstallations.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = FirebaseInstallations.xcframework; path = ../../../../../../../Downloads/Firebase/FirebaseAnalytics/FirebaseInstallations.xcframework; sourceTree = "<group>"; };
@@ -358,69 +207,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2ACDAF62D8831FC0075172E /* FirebaseSessions.xcframework in Frameworks */,
-				E2ACDAF42D8831FC0075172E /* FirebaseRemoteConfigInterop.xcframework in Frameworks */,
-				E2ACDB1B2D8831FC0075172E /* GTMSessionFetcher.xcframework in Frameworks */,
-				E2ACDB062D8831FC0075172E /* GoogleDataTransport.xcframework in Frameworks */,
-				E2ACDAC82D8831FC0075172E /* FirebaseAnalyticsOnDeviceConversion.xcframework in Frameworks */,
-				E2ACDAF82D8831FC0075172E /* FirebaseSharedSwift.xcframework in Frameworks */,
-				E2ACDAD32D8831FC0075172E /* FirebaseAuth.xcframework in Frameworks */,
-				E2ACDB132D8831FC0075172E /* GTMAppAuth.xcframework in Frameworks */,
-				E2ACDAE52D8831FC0075172E /* FirebaseCrashlytics.xcframework in Frameworks */,
-				E2ACDB002D8831FC0075172E /* GoogleAppMeasurement.xcframework in Frameworks */,
-				E2ACDB292D8831FC0075172E /* RecaptchaInterop.xcframework in Frameworks */,
-				E2ACDAD52D8831FC0075172E /* FirebaseAuth.xcframework in Frameworks */,
-				E2ACDB272D8831FC0075172E /* RecaptchaInterop.xcframework in Frameworks */,
-				E2ACDAE72D8831FC0075172E /* FirebaseDatabase.xcframework in Frameworks */,
-				E2ACDACA2D8831FC0075172E /* FirebaseAppCheckInterop.xcframework in Frameworks */,
-				E2ACDB0E2D8831FC0075172E /* GoogleUtilities.xcframework in Frameworks */,
-				E2ACDB1E2D8831FC0075172E /* leveldb.xcframework in Frameworks */,
-				E2ACDAFA2D8831FC0075172E /* FirebaseSharedSwift.xcframework in Frameworks */,
-				E2ACDAC32D8831FC0075172E /* FirebaseABTesting.xcframework in Frameworks */,
-				E2ACDB202D8831FC0075172E /* nanopb.xcframework in Frameworks */,
-				E2ACDADD2D8831FC0075172E /* FirebaseCoreExtension.xcframework in Frameworks */,
-				E2ACDAE92D8831FC0075172E /* FirebaseFirestore.xcframework in Frameworks */,
-				E2ACDB152D8831FC0075172E /* GTMSessionFetcher.xcframework in Frameworks */,
-				E2ACDB082D8831FC0075172E /* GoogleDataTransport.xcframework in Frameworks */,
-				E2ACDADB2D8831FC0075172E /* FirebaseCoreExtension.xcframework in Frameworks */,
-				E2ACDB042D8831FC0075172E /* GoogleAppMeasurementOnDeviceConversion.xcframework in Frameworks */,
-				E2ACDB0A2D8831FC0075172E /* GoogleSignIn.xcframework in Frameworks */,
-				E2ACDB222D8831FC0075172E /* nanopb.xcframework in Frameworks */,
-				E2ACDAC02D8831FC0075172E /* FBLPromises.xcframework in Frameworks */,
-				E2ACDABE2D8831FC0075172E /* AppCheckCore.xcframework in Frameworks */,
-				E2ACDAFE2D8831FC0075172E /* GoogleAppMeasurement.xcframework in Frameworks */,
-				E2ACDB0F2D8831FC0075172E /* grpc.xcframework in Frameworks */,
-				E2ACDB172D8831FC0075172E /* GTMSessionFetcher.xcframework in Frameworks */,
-				E2ACDB0C2D8831FC0075172E /* GoogleUtilities.xcframework in Frameworks */,
-				E2ACDAED2D8831FC0075172E /* FirebaseInAppMessaging.xcframework in Frameworks */,
-				E2ACDB192D8831FC0075172E /* GTMSessionFetcher.xcframework in Frameworks */,
-				E2ACDACC2D8831FC0075172E /* FirebaseAppCheckInterop.xcframework in Frameworks */,
-				E2ACDB1C2D8831FC0075172E /* leveldb.xcframework in Frameworks */,
-				E2ACDB112D8831FC0075172E /* grpcpp.xcframework in Frameworks */,
-				E2ACDAD92D8831FC0075172E /* FirebaseCoreExtension.xcframework in Frameworks */,
-				E2ACDAD62D8831FC0075172E /* FirebaseCore.xcframework in Frameworks */,
-				E2ACDABA2D8831FC0075172E /* absl.xcframework in Frameworks */,
-				E2ACDAD12D8831FC0075172E /* FirebaseAppCheckInterop.xcframework in Frameworks */,
-				E2ACDAFC2D8831FC0075172E /* FirebaseStorage.xcframework in Frameworks */,
-				E2ACDB232D8831FC0075172E /* openssl_grpc.xcframework in Frameworks */,
-				E2ACDACF2D8831FC0075172E /* FirebaseAppCheckInterop.xcframework in Frameworks */,
-				E2ACDAEF2D8831FC0075172E /* FirebaseInstallations.xcframework in Frameworks */,
-				E2ACDAC52D8831FC0075172E /* FirebaseAnalytics.xcframework in Frameworks */,
-				E2ACDB252D8831FC0075172E /* Promises.xcframework in Frameworks */,
-				E2ACDAE42D8831FC0075172E /* FirebaseCoreInternal.xcframework in Frameworks */,
-				E2ACDAE12D8831FC0075172E /* FirebaseCoreExtension.xcframework in Frameworks */,
-				E2ACDAD82D8831FC0075172E /* FirebaseCore.xcframework in Frameworks */,
-				E2ACDAC72D8831FC0075172E /* FirebaseAnalytics.xcframework in Frameworks */,
-				E2ACDAC22D8831FC0075172E /* FBLPromises.xcframework in Frameworks */,
-				E2ACDAF12D8831FC0075172E /* FirebaseInstallations.xcframework in Frameworks */,
-				E2ACDAE22D8831FC0075172E /* FirebaseCoreInternal.xcframework in Frameworks */,
-				E2ACDB012D8831FC0075172E /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
-				E2ACDAF22D8831FC0075172E /* FirebaseMessaging.xcframework in Frameworks */,
-				E2ACDB032D8831FC0075172E /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
-				E2ACDADF2D8831FC0075172E /* FirebaseCoreExtension.xcframework in Frameworks */,
-				E2ACDAEB2D8831FC0075172E /* FirebaseFirestoreInternal.xcframework in Frameworks */,
-				E2ACDABC2D8831FC0075172E /* AppAuth.xcframework in Frameworks */,
-				E2ACDACE2D8831FC0075172E /* FirebaseAppCheckInterop.xcframework in Frameworks */,
+				E2ACDB412D883B290075172E /* nanopb.xcframework in Frameworks */,
+				E2ACDB402D883B240075172E /* FirebaseAuth.xcframework in Frameworks */,
+				E2ACDB3F2D883B1E0075172E /* GoogleUtilities.xcframework in Frameworks */,
+				E2ACDB3E2D883B140075172E /* GoogleAppMeasurement.xcframework in Frameworks */,
+				E2ACDB3D2D883ADC0075172E /* FirebaseCore.xcframework in Frameworks */,
+				E2ACDB3C2D883AD70075172E /* FirebaseAnalytics.xcframework in Frameworks */,
+				E2ACDB3B2D883AD20075172E /* FBLPromises.xcframework in Frameworks */,
+				E2ACDB3A2D883AC10075172E /* FirebaseAuthInterop.xcframework in Frameworks */,
+				E2ACDB392D883ABB0075172E /* FirebaseSharedSwift.xcframework in Frameworks */,
+				E2ACDB382D883AB50075172E /* FirebaseDatabase.xcframework in Frameworks */,
+				E2ACDB372D883AAF0075172E /* FirebaseAppCheckInterop.xcframework in Frameworks */,
+				E2ACDB362D883AA70075172E /* openssl_grpc.xcframework in Frameworks */,
+				E2ACDB352D883AA10075172E /* leveldb.xcframework in Frameworks */,
+				E2ACDB342D883A9B0075172E /* grpcpp.xcframework in Frameworks */,
+				E2ACDB332D883A950075172E /* grpc.xcframework in Frameworks */,
+				E2ACDB322D883A8E0075172E /* FirebaseFirestoreInternal.xcframework in Frameworks */,
+				E2ACDB312D883A890075172E /* FirebaseFirestore.xcframework in Frameworks */,
+				E2ACDB302D883A830075172E /* FirebaseCoreExtension.xcframework in Frameworks */,
+				E2ACDB2F2D883A7D0075172E /* absl.xcframework in Frameworks */,
+				E2ACDB2E2D883A770075172E /* GTMSessionFetcher.xcframework in Frameworks */,
+				E2ACDB2D2D883A700075172E /* FirebaseStorage.xcframework in Frameworks */,
+				E2ACDB2C2D883A6B0075172E /* GoogleDataTransport.xcframework in Frameworks */,
+				E2ACDB2B2D883A630075172E /* FirebaseMessaging.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,7 +389,6 @@
 				E2D5C4372D7ED40C00C363E1 /* Sources */,
 				E2D5C4382D7ED40C00C363E1 /* Frameworks */,
 				E2D5C4392D7ED40C00C363E1 /* Resources */,
-				E2ACDB2A2D8831FC0075172E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
